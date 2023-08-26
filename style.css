@@ -3,7 +3,37 @@
     padding: 0;
 }
 
-.navbar {
-    background-color: cornflowerblue;
+body {
+    background-color: #ddd;
+}
+
+.container {
     width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "sidebar content content"
+    "sidebar content content"
+    "footer footer footer";
+    grid-template-columns: 20% 30% 80%;
+}
+
+.container .navbar {
+    background-color: rgb(36, 101, 241);
+    grid-area: navbar;
+}
+
+.container .sidebar {
+    background-color: aquamarine;
+    grid-area: sidebar;
+}
+
+.container .content {
+    grid-area: content;
+    background-color: bisque;
+}
+
+.container .footer {
+    grid-area: footer;
+    background-color: blueviolet;
 }
