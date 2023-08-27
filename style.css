@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    background-color: lightslategray;
+}
+
 .container {
     display: flex;
     width: 100%;
@@ -49,7 +53,7 @@
 
 .navigation > li {
     list-style: none;
-    padding: 5px;
+    padding: 10px;
 }
 
 .navigation > li > a {
@@ -62,4 +66,26 @@
     color: red;
     transition: all .3s ease-in-out;
     background-color: #ddd;
+}
+
+/* Content */
+.content {
+    max-width: 100%;
+    height: 200px;
+    display: flex;
+    align-content: center;
+    
+}
+
+.gambar {
+    width: 50%;
+}
+
+.desc {
+    display: flex;
+    width: 50%;
+    font-size: 35px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
